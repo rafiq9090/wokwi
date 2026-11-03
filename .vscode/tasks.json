@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PlatformIO: Build ESP32",
+      "type": "process",
+      "command": "py",
+      "args": ["-m", "platformio", "run", "--environment", "esp32"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "PlatformIO: Upload ESP32",
+      "type": "process",
+      "command": "py",
+      "args": ["-m", "platformio", "run", "--target", "upload", "--environment", "esp32"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
